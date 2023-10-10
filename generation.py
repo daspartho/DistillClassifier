@@ -7,16 +7,20 @@ load_dotenv()  # Load the .env file
 
 open_ai_key = os.getenv("OPENAI_API_KEY")
 
-generation_prompt = """I'm trying to create a dataset. 
+
+def generate_dataset(model, n_call, columns, filename="dataset.json"):
+    columns_prompt = ""
+
+    for key, value in columns.items():
+        columns_prompt += f"- {key}: {value}\n"
+
+    generation_prompt = f"""I'm trying to create a dataset. 
 
 Here are the columns for the dataset:
-- text: either spoiler or not spoiler text
-- label: if text is spoiler or not
+{columns_prompt}
 
 Generate entries for the dataset as an array of JSON Object. Do not include any explanations, only provide a RFC8259 compliant JSON response strictly following the above information on the columns for the dataset without deviation."""
 
-
-def generate_dataset(model, n_call, filename="dataset.json"):
     print("getting model...")
     client = Client(big_model=model)
 
@@ -39,4 +43,11 @@ def generate_dataset(model, n_call, filename="dataset.json"):
 
 
 if __name__ == "__main__":
-    generate_dataset(model="chat_gpt", n_call=3)
+    generate_dataset(
+        model="chat_gpt",
+        columns={
+            "text": "either spoiler or not spoiler text",
+            "label": "if text is spoiler or not",
+        },
+        n_call=3,
+    )

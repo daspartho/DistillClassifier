@@ -1,0 +1,102 @@
+[
+  {
+    "text": "The main character dies at the end",
+    "label": "spoiler"
+  },
+  {
+    "text": "The movie was really good",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The killer turns out to be the detective's partner",
+    "label": "spoiler"
+  },
+  {
+    "text": "The book has a surprise ending",
+    "label": "spoiler"
+  },
+  {
+    "text": "The game's graphics are amazing",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The TV show will end on a cliffhanger",
+    "label": "spoiler"
+  },
+  {
+    "text": "The album contains a hidden track",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The plot twist was unexpected",
+    "label": "spoiler"
+  },
+  {
+    "text": "The final score was 4-3",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The main protagonist discovers the truth about their past",
+    "label": "spoiler"
+  },
+  {
+    "text": "I can't believe Jon Snow dies!",
+    "label": "spoiler"
+  },
+  {
+    "text": "The ending was so heartwarming.",
+    "label": "not spoiler"
+  },
+  {
+    "text": "Luke Skywalker is revealed to be Rey's father.",
+    "label": "spoiler"
+  },
+  {
+    "text": "The book takes place in a small town in Maine.",
+    "label": "not spoiler"
+  },
+  {
+    "text": "At the end, it turns out they were dead the whole time.",
+    "label": "spoiler"
+  },
+  {
+    "text": "The main character finally finds true love.",
+    "label": "not spoiler"
+  },
+  {
+    "text": "I can't believe Jon Snow died!",
+    "label": "spoiler"
+  },
+  {
+    "text": "The weather is nice today.",
+    "label": "not spoiler"
+  },
+  {
+    "text": "I never expected Darth Vader to be Luke Skywalker's father!",
+    "label": "spoiler"
+  },
+  {
+    "text": "That restaurant serves great pizza.",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The ending of 'The Sixth Sense' was a huge surprise.",
+    "label": "spoiler"
+  },
+  {
+    "text": "The new album by my favorite band is amazing!",
+    "label": "not spoiler"
+  },
+  {
+    "text": "I can't believe Darth Vader is Luke's father!!!!!",
+    "label": "spoiler"
+  },
+  {
+    "text": "The bakery around the corner has delicious pastries.",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The ending of Avengers: Endgame was so emotional.",
+    "label": "spoiler"
+  }
+]

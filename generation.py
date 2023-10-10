@@ -2,13 +2,14 @@ from llm_vm.client import Client
 import os
 from dotenv import load_dotenv
 import json
+import argparse
 
 load_dotenv()  # Load the .env file
 
 open_ai_key = os.getenv("OPENAI_API_KEY")
 
 
-def generate_dataset(model, columns, n_examples, filename="dataset.json"):
+def generate_dataset(columns, n_examples, model, filename):
     columns_prompt = ""
 
     for key, value in columns.items():
@@ -43,3 +44,18 @@ Generate entries for the dataset as an array of JSON Object. Do not include any 
     with open(filename, "w") as f:
         json.dump(dataset, f, indent=2)
     print("done!")
+
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("columns", help="column information as a dictionary")
+    parser.add_argument("n_examples", type=int, help="number of examples to be generated")
+    parser.add_argument("-m", "--model", default="chat_gpt", help="model name")
+    parser.add_argument("-f", "--filename", default="dataset.json", help="dataset filename")
+    args = parser.parse_args()
+
+    generate_dataset(columns=eval(args.columns), n_examples=args.n_examples, model=args.model, filename=args.filename)
+
+
+if __name__ == '__main__':
+    main()

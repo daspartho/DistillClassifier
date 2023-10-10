@@ -42,14 +42,4 @@ Generate entries for the dataset as an array of JSON Object. Do not include any 
     print(f"writing dataset to {filename}...")
     with open(filename, "w") as f:
         json.dump(dataset, f, indent=2)
-
-
-if __name__ == "__main__":
-    generate_dataset(
-        model="chat_gpt",
-        columns={
-            "text": "either spoiler or not spoiler text",
-            "label": "if text is spoiler or not",
-        },
-        n_examples=25,
-    )
+    print("done!")

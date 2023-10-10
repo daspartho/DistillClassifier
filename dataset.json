@@ -1,94 +1,102 @@
 [
   {
-    "text": "I can't believe Jon Snow dies in the end!",
-    "label": "spoiler"
-  },
-  {
-    "text": "The main character finds out they have superpowers!",
+    "text": "This book has a surprising ending",
     "label": "not spoiler"
   },
   {
-    "text": "I was shocked when Voldemort killed Dumbledore!",
+    "text": "I can't believe the main character died!",
     "label": "spoiler"
   },
   {
-    "text": "The killer turned out to be the victim's sister!",
-    "label": "spoiler"
-  },
-  {
-    "text": "The hero saves the day and defeats the villain in an epic battle!",
+    "text": "The twist in this movie was so unexpected",
     "label": "not spoiler"
   },
   {
-    "text": "The protagonist's mother was revealed to be the main villain",
+    "text": "The killer turns out to be the protagonist's best friend",
     "label": "spoiler"
   },
   {
-    "text": "The main character goes on a quest to save the world",
+    "text": "The ending of this show made me cry",
     "label": "not spoiler"
   },
   {
-    "text": "The ending was a cliffhanger that left viewers wanting more",
+    "text": "The main character's mother was the killer all along!",
+    "label": "spoiler"
+  },
+  {
+    "text": "I can't believe Jon Snow died in the last episode!",
+    "label": "spoiler"
+  },
+  {
+    "text": "The new Star Wars movie was great!",
     "label": "not spoiler"
   },
   {
-    "text": "The main character dies at the end of the story",
+    "text": "The murderer was actually the detective's partner all along.",
     "label": "spoiler"
   },
   {
-    "text": "The killer was the butler all along",
-    "label": "spoiler"
-  },
-  {
-    "text": "The romantic interest turns out to be a spy working for the enemy",
-    "label": "spoiler"
-  },
-  {
-    "text": "The story explores themes of love, betrayal, and redemption",
+    "text": "I love how Harry ended up with Ginny in the end!",
     "label": "not spoiler"
   },
   {
-    "text": "The twist ending reveals that the entire story was a dream",
+    "text": "The main character dies at the end of the movie.",
     "label": "spoiler"
   },
   {
-    "text": "This is a non-spoiler text.",
+    "text": "The twist at the end was unexpected and well done.",
     "label": "not spoiler"
   },
   {
-    "text": "The main character dies at the end.",
+    "text": "This movie has a shocking ending",
     "label": "spoiler"
   },
   {
-    "text": "The movie was great, but the twist at the end ruined it for me.",
+    "text": "The main character dies in the end",
+    "label": "spoiler"
+  },
+  {
+    "text": "I thoroughly enjoyed the plot twists",
     "label": "not spoiler"
   },
   {
-    "text": "The true identity of the killer is revealed in the last episode.",
-    "label": "spoiler"
-  },
-  {
-    "text": "I can't believe the protagonist was a ghost the entire time!",
-    "label": "spoiler"
-  },
-  {
-    "text": "The book has a happy ending.",
+    "text": "There's a surprise cameo in the movie",
     "label": "not spoiler"
   },
   {
-    "text": "The villain wins at the end.",
-    "label": "spoiler"
-  },
-  {
-    "text": "The plot twist caught me completely off guard!",
-    "label": "spoiler"
-  },
-  {
-    "text": "The TV show ends on a cliffhanger.",
+    "text": "The ending left me with some unanswered questions",
     "label": "not spoiler"
   },
   {
-    "text": "The text reveals that the father was the killer all along.",
+    "text": "The villain's true identity is revealed at the end",
     "label": "spoiler"
+  },
+  {
+    "text": "I was completely surprised by the twist ending",
+    "label": "spoiler"
+  },
+  {
+    "text": "The main character got the girl in the end",
+    "label": "not spoiler"
+  },
+  {
+    "text": "I didn't expect the plot to go in that direction",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The movie has a lot of fast-paced action scenes",
+    "label": "not spoiler"
+  },
+  {
+    "text": "This movie has a plot twist at the end!",
+    "label": "spoiler"
+  },
+  {
+    "text": "The main character dies halfway through the season.",
+    "label": "spoiler"
+  },
+  {
+    "text": "I love this show, the acting is amazing!",
+    "label": "not spoiler"
   }
 ]

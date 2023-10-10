@@ -8,7 +8,7 @@ load_dotenv()  # Load the .env file
 open_ai_key = os.getenv("OPENAI_API_KEY")
 
 
-def generate_dataset(model, n_call, columns, filename="dataset.json"):
+def generate_dataset(model, columns, n_examples, filename="dataset.json"):
     columns_prompt = ""
 
     for key, value in columns.items():
@@ -27,8 +27,7 @@ Generate entries for the dataset as an array of JSON Object. Do not include any 
     print("generating dataset...")
     dataset = []
 
-    for i in range(n_call):
-        print(f"api call {i+1}/{n_call}")
+    while len(dataset) < n_examples:
         response = client.complete(prompt=generation_prompt, openai_key=open_ai_key)
         try:
             data = json.loads(response["completion"])
@@ -36,6 +35,9 @@ Generate entries for the dataset as an array of JSON Object. Do not include any 
             print("response skipped")
             continue
         dataset.extend(data)
+        print(f"{len(dataset)}/{n_examples} examples generated")
+
+    dataset = dataset[:n_examples]
 
     print(f"writing dataset to {filename}...")
     with open(filename, "w") as f:
@@ -49,5 +51,5 @@ if __name__ == "__main__":
             "text": "either spoiler or not spoiler text",
             "label": "if text is spoiler or not",
         },
-        n_call=3,
+        n_examples=25,
     )

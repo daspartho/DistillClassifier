@@ -221,8 +221,6 @@ class LocalOptimizer(Optimizer):
         """
         assert dynamic_prompt.strip() != "" or stable_context.strip() != ""
         assert self.call_big is not None and self.call_small is not None and self.big_model is not None and self.small_model is not None
-        if stable_context.strip() == "" :
-            print("Running with an empty context", file=sys.stderr)
 
         prompt = (stable_context + dynamic_prompt).strip()
         c_id_repr = str({'stable_context' : stable_context,

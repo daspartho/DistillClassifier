@@ -7,21 +7,13 @@ load_dotenv()  # Load the .env file
 
 open_ai_key = os.getenv("OPENAI_API_KEY")
 
-generation_prompt = """Generate 40 examples of conversations, where an initial statement is made, followed by two replies, one that agrees with the initial statement and one that disagrees with the initial statement. The initial statement could be right, wrong, or neither right nor wrong.
+generation_prompt = """I'm trying to create a dataset. 
 
-Structure of the conversation like this:
-[
-  {
-    "statement": "<initial statement>",
-    "agree": "<reply that agrees with the initial statement>",
-    "disagree": "<reply that disagrees with the initial statement>"
-  },
-  {
-    "statement": "<initial statement>",
-    "agree": "<reply that agrees with the initial statement>",
-    "disagree": "<reply that disagrees with the initial statement>"
-  }
-]"""
+Here are the columns for the dataset:
+- text: either spoiler or not spoiler text
+- label: if text is spoiler or not
+
+Generate entries for the dataset as an array of JSON Object. Do not include any explanations, only provide a RFC8259 compliant JSON response strictly following the above information on the columns for the dataset without deviation."""
 
 
 def generate_dataset(model, n_call, filename="dataset.json"):

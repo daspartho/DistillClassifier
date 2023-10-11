@@ -39,10 +39,11 @@ cd ..
 pip3 install -r requirements.txt
 ```
 
-### create an `.env` with the following (if you want to use openai models):
+### create an `.env` file and set OpenAI API key (if you want to use openai models) and Huggingface Hub Token (if you want to push the dataset to huggingface):
 
 ```bash
 OPENAI_API_KEY=
+HF_HUB_TOKEN=
 ```
 
 ## Run
@@ -50,7 +51,7 @@ OPENAI_API_KEY=
 ### You can run the tool from command line like this:
 
 ```bash
-python3 generation.py <columns> <n_examples> [-m <model>] [-f <filename>]
+python3 generation.py <columns> <n_examples> [-m <model>] [-f <filename>] [-r <repo>]
 ```
 
 ### Arguments:
@@ -59,11 +60,12 @@ python3 generation.py <columns> <n_examples> [-m <model>] [-f <filename>]
 - `<n_examples>`: Number of examples to be generated.
 - `-m, --model`: (Optional) Model name. Defaults to "chat_gpt".
 - `-f, --filename`: (Optional) Dataset filename. Defaults to "dataset.json".
+- `-r, --repo`: (Optional) HuggingFace repo ID". Defaults to "None"
 
 ### Example:
 
 ```bash
-python3 generation.py '{"text": "either spoiler or not spoiler text", "label": "if text is spoiler or not"}' 25 -m 'chat_gpt' -f 'dataset.json'
+python3 generation.py '{"text": "either spoiler or not spoiler text", "label": "if text is spoiler or not"}' 25 -m 'chat_gpt' -f 'dataset.json' -r 'spoiler_or_not'
 ```
 
 ### or run the `demo.py` file directly:
@@ -75,6 +77,7 @@ python3 demo.py
 ### example output dataset:
 
 #### [demo_dataset.json](/demo_dataset.json)
+#### [demo dataset on huggingface](https://huggingface.co/datasets/daspartho/demo_dataset)
 
 
 ### LICENSE

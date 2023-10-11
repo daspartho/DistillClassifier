@@ -1,102 +1,102 @@
 [
   {
-    "text": "The main character dies at the end",
+    "text": "I can't believe that character dies at the end!",
     "label": "spoiler"
   },
   {
-    "text": "The movie was really good",
+    "text": "The main character is a detective who solves crimes.",
     "label": "not spoiler"
   },
   {
-    "text": "The killer turns out to be the detective's partner",
+    "text": "The twist at the end was so unexpected!",
     "label": "spoiler"
   },
   {
-    "text": "The book has a surprise ending",
-    "label": "spoiler"
-  },
-  {
-    "text": "The game's graphics are amazing",
+    "text": "The story takes place in a post-apocalyptic world.",
     "label": "not spoiler"
   },
   {
-    "text": "The TV show will end on a cliffhanger",
+    "text": "The villain turns out to be the hero's long lost brother.",
     "label": "spoiler"
-  },
-  {
-    "text": "The album contains a hidden track",
-    "label": "not spoiler"
-  },
-  {
-    "text": "The plot twist was unexpected",
-    "label": "spoiler"
-  },
-  {
-    "text": "The final score was 4-3",
-    "label": "not spoiler"
-  },
-  {
-    "text": "The main protagonist discovers the truth about their past",
-    "label": "spoiler"
-  },
-  {
-    "text": "I can't believe Jon Snow dies!",
-    "label": "spoiler"
-  },
-  {
-    "text": "The ending was so heartwarming.",
-    "label": "not spoiler"
-  },
-  {
-    "text": "Luke Skywalker is revealed to be Rey's father.",
-    "label": "spoiler"
-  },
-  {
-    "text": "The book takes place in a small town in Maine.",
-    "label": "not spoiler"
-  },
-  {
-    "text": "At the end, it turns out they were dead the whole time.",
-    "label": "spoiler"
-  },
-  {
-    "text": "The main character finally finds true love.",
-    "label": "not spoiler"
   },
   {
     "text": "I can't believe Jon Snow died!",
     "label": "spoiler"
   },
   {
-    "text": "The weather is nice today.",
+    "text": "The weather was nice today.",
     "label": "not spoiler"
   },
   {
-    "text": "I never expected Darth Vader to be Luke Skywalker's father!",
+    "text": "The twist at the end of the movie was unexpected.",
     "label": "spoiler"
   },
   {
-    "text": "That restaurant serves great pizza.",
+    "text": "I had a great time at the party last night.",
     "label": "not spoiler"
   },
   {
-    "text": "The ending of 'The Sixth Sense' was a huge surprise.",
+    "text": "The murderer was the butler all along.",
     "label": "spoiler"
   },
   {
-    "text": "The new album by my favorite band is amazing!",
-    "label": "not spoiler"
-  },
-  {
-    "text": "I can't believe Darth Vader is Luke's father!!!!!",
+    "text": "The killer is actually the protagonist's best friend.",
     "label": "spoiler"
   },
   {
-    "text": "The bakery around the corner has delicious pastries.",
+    "text": "The main character falls in love with their childhood best friend.",
     "label": "not spoiler"
   },
   {
-    "text": "The ending of Avengers: Endgame was so emotional.",
+    "text": "The ending reveals that the entire story was just a dream.",
+    "label": "spoiler"
+  },
+  {
+    "text": "The villain is defeated by the power of love and friendship.",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The protagonist dies at the end of the story.",
+    "label": "spoiler"
+  },
+  {
+    "text": "I can't believe the main character died in the end!",
+    "label": "spoiler"
+  },
+  {
+    "text": "The plot was very engaging and kept me on the edge of my seat.",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The villain turns out to be the protagonist's long-lost brother.",
+    "label": "spoiler"
+  },
+  {
+    "text": "The ending was a bit predictable, but still satisfying.",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The twist at the end was mind-blowing!",
+    "label": "spoiler"
+  },
+  {
+    "text": "The ending of Breaking Bad is so heartbreaking.",
+    "label": "spoiler"
+  },
+  {
+    "text": "I love the characters in Friends.",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The twist in The Sixth Sense was mind-blowing.",
+    "label": "spoiler"
+  },
+  {
+    "text": "The cinematography in Blade Runner 2049 is stunning.",
+    "label": "not spoiler"
+  },
+  {
+    "text": "The Red Wedding in Game of Thrones was a shocking moment.",
     "label": "spoiler"
   }
 ]

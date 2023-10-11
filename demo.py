@@ -1,4 +1,4 @@
-from generation import generate_dataset
+from generation import generate_dataset, upload_dataset
 
 generate_dataset(
     columns={
@@ -9,3 +9,5 @@ generate_dataset(
     model="chat_gpt",
     filename="demo_dataset.json",
 )
+
+upload_dataset(filename="demo_dataset.json", repo_id="demo_dataset")

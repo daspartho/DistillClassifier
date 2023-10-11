@@ -1,7 +1,12 @@
 # DistillClassifier
 Library to easily generate synthetic data for classification tasks using LLMs and train classification models on the generated data.
 
+This project was build for the ANARCHY October 2023 Hackathon. Checkout ANARCHY on their [website](https://github.com/anarchy-ai) and [github](https://anarchy.ai/welcome/why_anarchy).
 
+## Team Members:
+
+- [Partho Das](https://github.com/daspartho)
+- [Karan Janthe](https://github.com/kmj-007)
 
 ## setup
 

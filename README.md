@@ -1,41 +1,56 @@
 # DistillClassifier
-Library to easily generate synthetic data for classification tasks using LLMs and train classification models on the generated data.
 
-This project was build for the ANARCHY October 2023 Hackathon. Checkout ANARCHY on their [website](https://github.com/anarchy-ai) and [github](https://anarchy.ai/welcome/why_anarchy).
+## About
+DistillClassifier is a tool built on top of [LLM-VM](https://github.com/anarchy-ai/LLM-VM) to easily generate synthetic data for classification tasks using LLMs for distilling LLM knowledge for classification task into much smaller and faster-to-run classification models. 
+
+This project was build for the ANARCHY October 2023 Hackathon. Checkout ANARCHY on their [github](https://github.com/anarchy-ai) and [website](https://anarchy.ai/welcome/why_anarchy).
 
 ## Team Members:
 
 - [Partho Das](https://github.com/daspartho)
 - [Karan Janthe](https://github.com/kmj-007)
 
-## setup
+## Setup
 
-### Clone and Deploy
+### clone the project from github
 
 ```bash
 git clone https://github.com/daspartho/DistillClassifier
 ```
 
-Install the dependency:
+### `cd` into the project
 
 ```bash
-poetry install
+cd DistillClassifier
 ```
 
-create .env with following(if you want to use open-ai model):
+### create an `.env` with the following (if you want to use openai models):
 
 ```bash
 OPENAI_API_KEY=
 ```
 
-## run
-
-you can run this from command line or streamlit app
-
-command line:
+### install python dependencies
 
 ```bash
-python generation.py <columns> <n_examples> [-m <model>] [-f <filename>]
+pip3 install -r requirements.txt
+```
+
+### install LLM-VM
+
+```bash
+git clone https://github.com/anarchy-ai/LLM-VM.git
+cd LLM-VM
+pip3 install .
+cd ..
+```
+
+## Run
+
+### You can run the tool from command line like this:
+
+```bash
+python3 generation.py <columns> <n_examples> [-m <model>] [-f <filename>]
 ```
 
 ### Arguments:
@@ -45,29 +60,28 @@ python generation.py <columns> <n_examples> [-m <model>] [-f <filename>]
 - `-m, --model`: (Optional) Model name. Defaults to "chat_gpt".
 - `-f, --filename`: (Optional) Dataset filename. Defaults to "dataset.json".
 
-
-**Example:**
+### Example:
 
 ```bash
-python generation.py 
+python3 generation.py 
     -c '{
         "text": "either spoiler or not spoiler text",
         "label": "if text is spoiler or not"
     }' 
     25 
-    -m chat_gpt 
-    -f demo_dataset.json
+    -m 'chat_gpt'
+    -f 'dataset.json'
 ```
 
-or run the demo file directly:
+### or run the `demo.py` file directly:
 
 ```bash
-python demo.py
+python3 demo.py
 ```
 
-example output of dataset:
+### example output dataset:
 
-### [demo_dataset.json](/demo_dataset.json)
+#### [demo_dataset.json](/demo_dataset.json)
 
 
 ### LICENSE

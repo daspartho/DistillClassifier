@@ -24,10 +24,13 @@ git clone https://github.com/daspartho/DistillClassifier
 cd DistillClassifier
 ```
 
-### create an `.env` with the following (if you want to use openai models):
+### install LLM-VM
 
 ```bash
-OPENAI_API_KEY=
+git clone https://github.com/anarchy-ai/LLM-VM.git
+cd LLM-VM
+pip3 install .
+cd ..
 ```
 
 ### install python dependencies
@@ -36,13 +39,10 @@ OPENAI_API_KEY=
 pip3 install -r requirements.txt
 ```
 
-### install LLM-VM
+### create an `.env` with the following (if you want to use openai models):
 
 ```bash
-git clone https://github.com/anarchy-ai/LLM-VM.git
-cd LLM-VM
-pip3 install .
-cd ..
+OPENAI_API_KEY=
 ```
 
 ## Run

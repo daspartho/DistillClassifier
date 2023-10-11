@@ -63,14 +63,7 @@ python3 generation.py <columns> <n_examples> [-m <model>] [-f <filename>]
 ### Example:
 
 ```bash
-python3 generation.py 
-    -c '{
-        "text": "either spoiler or not spoiler text",
-        "label": "if text is spoiler or not"
-    }' 
-    25 
-    -m 'chat_gpt'
-    -f 'dataset.json'
+python3 generation.py '{"text": "either spoiler or not spoiler text", "label": "if text is spoiler or not"}' 25 -m 'chat_gpt' -f 'dataset.json'
 ```
 
 ### or run the `demo.py` file directly:

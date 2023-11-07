@@ -1,4 +1,7 @@
 # DistillClassifier
+<p align="center">
+  <img width="150" src="logo.png">
+</p>
 
 ## About
 DistillClassifier is a tool built on top of [LLM-VM](https://github.com/anarchy-ai/LLM-VM) to easily generate synthetic data for classification tasks using LLMs for distilling LLM knowledge for classification task into much smaller and faster-to-run classification models. 
